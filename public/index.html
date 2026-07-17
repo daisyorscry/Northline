@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Northline is an independent design practice for useful, characterful digital work." />
+    <title>Northline — Independent design practice</title>
+    <link rel="stylesheet" href="/styles.css" />
+    <script src="/app.js" defer></script>
+  </head>
+  <body>
+    <div class="grain" aria-hidden="true"></div>
+    <header class="site-header shell">
+      <a class="wordmark" href="/" aria-label="Northline home">
+        <span class="wordmark-mark">N/</span> Northline
+      </a>
+      <nav aria-label="Main navigation">
+        <a href="#work">Work</a>
+        <a href="/about.html">Studio</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <span class="availability"><i></i> Available Sep '26</span>
+      <button class="menu-button" aria-expanded="false" aria-label="Open menu">Menu</button>
+    </header>
+
+    <main>
+      <section class="hero shell">
+        <p class="eyebrow">Independent design practice · Jakarta / everywhere</p>
+        <h1>Clear thinking.<br /><em>Unexpected</em> form.</h1>
+        <div class="hero-bottom">
+          <p>We shape identities and digital products for people building something worth noticing.</p>
+          <a class="round-link" href="#work" aria-label="See selected work">
+            <span>Selected<br />work</span><b>↓</b>
+          </a>
+        </div>
+        <div class="hero-object" aria-hidden="true">
+          <span>N</span><span>L</span>
+        </div>
+      </section>
+
+      <section class="work shell" id="work">
+        <div class="section-heading">
+          <p class="eyebrow">Selected work</p>
+          <p id="project-count">Three recent collaborations</p>
+        </div>
+        <div class="project-list" id="project-list" aria-live="polite">
+          <p class="loading">Loading selected work…</p>
+        </div>
+      </section>
+
+      <section class="statement shell">
+        <p class="eyebrow">What we believe</p>
+        <blockquote>
+          “Useful” and “beautiful” were never opposites. The best work is <em>both</em>—and has a little life in it.
+        </blockquote>
+      </section>
+
+      <section class="notes shell" id="notes">
+        <div class="section-heading">
+          <p class="eyebrow">Notes from the studio</p>
+          <a href="/about.html">How we work ↗</a>
+        </div>
+        <div class="note-grid" id="note-list"></div>
+      </section>
+
+      <section class="contact shell" id="contact">
+        <div>
+          <p class="eyebrow">Start a conversation</p>
+          <h2>Have something<br />in mind?</h2>
+          <p class="contact-copy">Tell us the rough version. We’ll help make it clear.</p>
+        </div>
+        <form id="inquiry-form">
+          <label>
+            <span>Your name</span>
+            <input name="name" type="text" minlength="2" placeholder="Maya Putri" required />
+          </label>
+          <label>
+            <span>Email address</span>
+            <input name="email" type="email" placeholder="maya@studio.com" required />
+          </label>
+          <label>
+            <span>What are we making?</span>
+            <select name="projectType" required>
+              <option value="">Choose one</option>
+              <option>Brand &amp; web</option>
+              <option>Digital product</option>
+              <option>Something else</option>
+            </select>
+          </label>
+          <button class="submit-button" type="submit">Send the short version <span>↗</span></button>
+          <p class="form-status" id="form-status" role="status"></p>
+        </form>
+      </section>
+    </main>
+
+    <footer class="shell">
+      <div class="wordmark"><span class="wordmark-mark">N/</span> Northline</div>
+      <p>Built with care in Jakarta.</p>
+      <p>© 2026 Northline Studio</p>
+    </footer>
+  </body>
+</html>
